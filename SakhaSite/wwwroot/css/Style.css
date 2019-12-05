@@ -1,0 +1,630 @@
+﻿/*
+Theme Name: SakhaSite
+Author:Zahra Sakha
+Version: 5.1.2
+*/
+:root {
+    font-family: IRANSans;
+    font-size: medium;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: right;
+    font-family: IRANSans;
+    font-size: medium;
+}
+
+a {
+    text-decoration: none;
+    color: deeppink;
+}
+
+::selection {
+    background: #b3e5fc;
+}
+
+/* fonts */
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/eot/IRANSansWeb.eot');
+    src: url('../fonts/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('../fonts/woff2/IRANSansWeb.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/woff/IRANSansWeb_Bold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/eot/IRANSansWeb_Medium.eot');
+    src: url('../fonts/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/woff/IRANSansWeb_Medium.woff') format('woff'), url('../fonts/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/eot/IRANSansWeb_Light.eot');
+    src: url('../fonts/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'), url('../fonts/woff2/IRANSansWeb_Light.woff2') format('woff2'), url('../fonts/woff/IRANSansWeb_Light.woff') format('woff'), url('../fonts/ttf/IRANSansWeb_Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/eot/IRANSansWeb_UltraLight.eot');
+    src: url('../fonts/eot/IRANSansWeb_UltraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/woff2/IRANSansWeb_UltraLight.woff2') format('woff2'), url('../fonts/woff/IRANSansWeb_UltraLight.woff') format('woff'), url('../fonts/ttf/IRANSansWeb_UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/eot/IRANSansWeb.eot');
+    src: url('../fonts/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'), url('../fonts/woff2/IRANSansWeb.woff2') format('woff2'), url('../fonts/woff/IRANSansWeb.woff') format('woff'), url('../fonts/ttf/IRANSansWeb.ttf') format('truetype');
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+}
+
+
+pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+     ======================================= */
+
+a {
+    color: rgba(51, 51, 51, 1);
+    text-decoration: none;
+}
+
+    a:hover a:focus a:active {
+        color: black;
+        text-decoration: none;
+    }
+
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+    color: #404040;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+
+.navbar {
+    width: 100%;
+    top: 0px;
+    background-color: rgb(128, 1, 128);
+    position: sticky;
+    z-index: 1000;
+}
+    .navbar li {
+        text-align-last: right;
+    }
+
+/*--------------------------------------------------------------
+# Entry-header
+--------------------------------------------------------------*/
+.entry-header {
+    padding: 40px;
+    width: 100%;
+    height: 400px;
+    min-height: 80px;
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 4px 4px 52px #333;
+    text-align: center;
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: bold;
+    background-image: url(../img/back-img-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+    height: 200px;
+    position: relative;
+    margin: 0px;
+    text-align: center;
+    padding-top: 50px;
+    height: auto;
+    color: #fff;
+    background-color: #474747;
+}
+
+.font {
+    font-weight: bold;
+    font-size: larger;
+    color: #E6E6E6;
+}
+
+footer a {
+    color: #B2B2B2;
+}
+
+    footer a:hover {
+        text-decoration: none;
+        color: #E6F9F8;
+    }
+
+.flex-center {
+   /*flex: center;*/ 
+}
+
+.rgba-white-light {
+    color: rgba(230, 249, 248, 0.5);
+}
+
+.pb5 {
+    padding-bottom: 5px;
+}
+
+#icons a {
+    font-size: 28px;
+}
+
+footer p {
+    font-size: medium;
+}
+
+/*--------------------------------------------------------------
+# Section
+--------------------------------------------------------------*/
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+}
+
+.carousel-caption {
+    top: 40vh;
+}
+
+.carousel {
+    width: 100%;
+    height: 600px;
+    color: #393939;
+    background-color: #f6f7f9;
+}
+
+    .carousel img {
+        filter: brightness(60%);
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+#section2 {
+    height: auto;
+    position: relative;
+}
+
+#section3 {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    padding-top: 50px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-image: url(../img/header-book-4.jpg);
+}
+
+    #section3 img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        box-shadow: 1px 4px 10px #666;
+        transform: scale(0.95);
+        transition: 0.4s;
+    }
+
+    #section3 > p {
+        color: aliceblue;
+        font-weight: 400;
+        text-shadow: 1px 4px 3px #666;
+    }
+
+    #section3 img:hover {
+        transform: scale(1);
+    }
+
+
+
+.align-center {
+    text-align: center;
+}
+
+.border-btn {
+    border-radius: 300px;
+}
+
+.font-a {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+
+.right {
+    float: right;
+}
+/************ style botton radius **********/
+.radius-btn {
+    border-radius: 300px;
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+}
+
+.link-icon {
+    font-size: xx-large;
+    position: relative;
+}
+/*--------------------------------------------------------------
+# Slider
+--------------------------------------------------------------*/
+
+.top-50 {
+    top: 55%;
+}
+.slide {
+    width:100%;
+    height:750px !important;
+}
+.item img {
+    height:100%;
+    object-fit: cover;
+}
+
+.slide li {
+    float: left;
+}
+
+.slide ol {
+    padding-left: 27.5%;
+}
+
+.slide h1 {
+    text-shadow: 0px 0px 16px #424242;
+    font-weight: 600;
+}
+.carousel-caption button {
+    color: azure;
+}
+.carousel-caption a :hover {
+    color: azure;
+}
+.button-right {
+    border: 3px dashed rgb(255, 102, 51);
+}
+
+.button-left {
+    background-color: rgb(255, 102, 51);
+}
+/*--------------------------------------------------------------
+# Text-section2
+--------------------------------------------------------------*/
+.item-section2 {
+    height: 450px;
+    padding-top: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #F1F1F1;
+}
+
+#section2 i {
+    font-size: 5rem;
+    color: #F6F7F9;
+    padding-bottom: 50px;
+    /*padding-right: 10%;  */
+}
+
+.item-1 {
+    background-color: rgba(255, 102, 51, 1.0);
+}
+
+.item-2 {
+    background-color: rgba(51, 204, 153, 1);
+}
+
+.item-3 {
+    background-color: rgba(0, 204, 255, 1);
+}
+
+/**********comments-area***********/
+.no {
+    margin: 0px;
+    padding: 0px;
+}
+/*--------------------------------------------------------------
+# Scrollbar
+--------------------------------------------------------------*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #6E6E6E;
+    border-radius: 10px;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: black;
+    }
+/******* list menu **********/
+
+.dropdown-item {
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,.5);
+    background-color: #333;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+    .dropdown-item:hover {
+        padding: 5px;
+        border: 1px solid rgba(0,0,0,.5);
+        background-color: #ddd;
+        color: rgba(71, 71, 71, 1);
+        width: 100%;
+    }
+/******** main *************/
+.main {
+    padding: 16px;
+    margin-top: 30px;
+}
+
+
+/****** nav-previous *******/
+.nav-previous {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 4px 4px 52px #333;
+    text-align: center;
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: bold;
+}
+/****** nav-next  *******/
+.nav-next {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    text-shadow: 4px 4px 52px #333;
+    text-align: center;
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+/*product-menu*/
+.product-menu {
+    padding-top: 60px;
+    background: #E3E3D8;
+    width: 100%;
+    min-height: 600px;
+}
+
+#shop-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.wrapper {
+    display: inline-block;
+    width: 300px;
+    height: 405px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0;
+    transform: scale(0.95);
+    transition: box-shadow 0.5s, transform 0.5s;
+    user-select: none;
+}
+
+.register .wrapper {
+    width: 80%;
+    height: auto;
+    padding: 5%;
+    margin: auto;
+}
+
+#shop-page .wrapper:hover {
+    transform: scale(1);
+    box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper > .container-cart {
+    width: 100%;
+    height: 100%;
+}
+
+    .wrapper > .container-cart > .top-cart {
+        width: 100%;
+        height: 75%;
+    }
+
+.top-cart > img {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom-cart {
+    width: 100%;
+    height: 25%;
+}
+
+    .bottom-cart .buy-cart {
+        width: 33%;
+        height: 100%;
+        background: #f1f1f1;
+        transition: background 0.5s;
+        border-left: solid thin rgba(0, 0, 0, 0.1);
+    }
+
+.wrapper .container-cart > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-cart a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    padding-right: 0.5em;
+}
+
+.bottom-cart div .row {
+    text-align: center;
+    height: 50%;
+}
+
+.bottom-cart .buy-cart i {
+    font-size: 2rem;
+    padding: 30px;
+    color: #A6CDDE;
+    transition: 0.4s;
+}
+
+.bottom-cart .buy-cart:hover {
+    background: #A6CDDE;
+    text-decoration:none;
+}
+
+    .bottom-cart .buy-cart:hover i {
+        transform: translateY(5px);
+        color: #00394B;
+    }
+
+.bottom-cart .details-cart {
+    width: 67%;
+    height: 100%;
+}
+
+
+/*** button all site***/
+button {
+    transition: box-shadow 0.6s;
+}
+
+    button:hover {
+        box-shadow: 0px 5px 10px #151515;
+    }
+
+.details-cart > * {
+    font-size: 96%;
+    padding-top: 10%;
+    padding-right: 8%;
+}
+
+.details-cart > h1 {
+    font-weight: bold;
+}
+
+/* News */
+.entry-content {
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+/*Shop*/
+#shop {
+    width: 100%;
+    height: 500px;
+}
+
+    #shop img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    #shop h1 {
+        position: absolute;
+        top: 30%;
+        right: 45%;
+    }
+/*bootstrap page-item rtl*/
+.page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-right: 0;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.page-item:last-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    margin-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
