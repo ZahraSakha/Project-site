@@ -1,0 +1,58 @@
+﻿@using  SakhaSite.Models.DataModels
+@using  SakhaSite.Helpers
+
+@model ProductsListViewModel
+@{
+
+    ViewData["Title"] = "List";
+}
+@inject PagingHelper PagingHelper
+
+<div id="shop" class="row">
+    <img src="~/images/slider/header-book-3.jpg" />
+    <h1>فروشگاه</h1>
+</div>
+
+<div id="shop-page">
+    @foreach (var item in Model.Products)
+    {
+        <div>
+            <div class="wrapper">
+                <div class="container-cart">
+                    <div class="top-cart">
+                        <img class="prod-image" src="~/images/book.png" />
+                    </div>
+                    <div class="bottom-cart">
+                        <div class="details-cart">
+                            <h1 class="row">@item.Name</h1>
+                            <p class="row">@item.Price<span>تومان</span></p>
+                        </div>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="buy-cart">
+                            <i class="material-icons text fas fa-shopping-cart">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<nav class="my-5" aria-label="Products Page navigation">
+    <ul class="pagination justify-content-center">
+        @foreach (var pagingItem in PagingHelper.GetPagings(Model.CurrentPage, Model.PagesCount))
+        {
+            <li class="page-item @(pagingItem.Active ? "active" : "")">
+                <a class="page-link" asp-action="List"
+                   asp-route-page="@pagingItem.PageNumber">
+                    @pagingItem.Display
+                    @if (pagingItem.Active)
+                    {
+                        <span class="sr-only">(current)</span>
+                    }
+                </a>
+            </li>
+        }
+    </ul>
+</nav>
+
