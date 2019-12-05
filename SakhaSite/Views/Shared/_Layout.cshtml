@@ -1,0 +1,54 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["SiteName"]</title>
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap-rtl/css/bootstrap-rtl.css" />
+    <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" />
+    <!--style form -->
+    <link href="~/css/StyleForms.css" rel="stylesheet" />
+    <!--all style-->
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- nav -->
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Brand -->
+        <a class="navbar-brand" asp-controller="Home" asp-action="Index">سایت سخا</a>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Home" asp-action="Index">خانه </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Products" asp-action="List">فروشگاه</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="SalePanel" asp-action="Index">برو به پنل فروش </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="~/lib/jquery/jquery.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="~/js/JavaScript.js"></script>
+    <script src="~/js/jquery.js"></script>
+</body>
+</html>
+
