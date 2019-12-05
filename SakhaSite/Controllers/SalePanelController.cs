@@ -11,7 +11,7 @@ using SakhaSite.Constants;
 
 namespace SakhaSite.Controllers
 {
-    [Authorize(Roles = RoleConstants.User)]
+    [Authorize(Roles = RoleConstants.Admin)]
     public class SalePanelController : Controller
     {
         private IProductsRepository productsRepository;
